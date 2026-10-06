@@ -1,0 +1,18 @@
+.terminal-reveal {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
+.terminal-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

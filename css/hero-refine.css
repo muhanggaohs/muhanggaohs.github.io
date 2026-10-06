@@ -1,0 +1,67 @@
+/* Hero uses one visual emphasis per line: structure first, color second. */
+:root[data-theme="dark"] {
+  --accent: #96adff;
+  --signal: #79d9ad;
+}
+
+.hero {
+  min-height: calc(100svh - 76px);
+}
+
+.hero-layout {
+  align-items: center;
+}
+
+h1 {
+  max-width: 790px;
+  font-size: clamp(54px, 5.55vw, 94px);
+  line-height: 0.98;
+}
+
+h1 em {
+  color: var(--signal);
+  font-size: inherit;
+}
+
+h1 > span {
+  color: color-mix(in srgb, var(--ink) 38%, transparent);
+}
+
+.hero-intro {
+  margin-top: 25px;
+}
+
+.terminal-shell {
+  border-color: #2d373e;
+  box-shadow: 0 20px 55px #00000020;
+}
+
+.terminal-titlebar {
+  background: #151b20;
+}
+
+.terminal-body {
+  min-height: 360px;
+  background: linear-gradient(145deg, #151b20, #11161a);
+}
+
+.terminal-caret {
+  background: var(--signal);
+}
+
+.button-primary {
+  background: var(--signal);
+}
+
+@media (max-width: 850px) {
+  .hero {
+    min-height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

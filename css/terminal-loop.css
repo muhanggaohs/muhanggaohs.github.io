@@ -1,0 +1,21 @@
+.terminal-status {
+  margin-top: 22px !important;
+  color: var(--terminal-muted);
+  font-size: 11px;
+}
+
+.terminal-status span {
+  color: var(--terminal-accent);
+}
+
+.clear-line {
+  margin-top: 18px !important;
+}
+
+.terminal-output {
+  justify-content: center;
+}
+
+.terminal-body {
+  padding-top: clamp(28px, 2.4vw, 36px);
+}
