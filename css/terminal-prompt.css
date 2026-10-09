@@ -1,0 +1,1 @@
+.terminal-command{display:block}.input-caret{display:inline-block;width:7px;height:15px;margin-left:2px;background:var(--terminal-accent);vertical-align:-2px;animation:.7s steps(2) infinite terminal-blink}@keyframes terminal-blink{50%{opacity:0}}
